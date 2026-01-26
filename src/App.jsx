@@ -1,28 +1,20 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
+import OpeningHours from "./OpeningHours";
 import About from "./About";
+import MenuPreview from "./MenuPreview";
 import Footer from "./Footer";
 
 export default function App() {
   return (
-    <div
-      style={{
-        width: "100%",
-        overflowX: "hidden",
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
-        background: "#faf7f2"
-      }}
-    >
+    <>
       <Navbar />
       <Hero />
+      <OpeningHours />
       <About />
-
-      {/* Push footer to bottom if content is short */}
-      <div style={{ flexGrow: 1 }} />
-
+      <MenuPreview />
       <Footer />
-    </div>
+    </>
   );
 }
+
